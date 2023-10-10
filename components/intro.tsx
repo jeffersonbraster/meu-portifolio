@@ -49,7 +49,7 @@ export const Intro = () => {
         </div>
       </div>
 
-      <motion.p
+      <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
@@ -59,7 +59,7 @@ export const Intro = () => {
         <span className="font-bold">4 anos</span> de experiência. Eu amo criar{" "}
         <span className="italic">sites</span>. Meu foco é{" "}
         <span className="underline">React (Next.js) e Node</span>.
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
