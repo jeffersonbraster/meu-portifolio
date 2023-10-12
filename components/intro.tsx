@@ -1,26 +1,27 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import jejeImg from "../public/jeje_linke.jpeg";
-import {
-  BsArrowRight,
-  BsGithub,
-  BsInstagram,
-  BsLinkedin,
-} from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+'use client'
+import Image from 'next/image'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+import jejeImg from '../public/jeje_linke.jpeg'
+import { BsArrowRight, BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs'
+import { HiDownload } from 'react-icons/hi'
+import { useSectionInView } from '@/lib/hooks'
 
 export const Intro = () => {
+  const { ref } = useSectionInView('Inicio', 0.5)
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+    <section
+      id="home"
+      ref={ref}
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ type: "tween", duration: 0.2 }}
+            transition={{ type: 'tween', duration: 0.2 }}
           >
             <Image
               src={jejeImg}
@@ -38,10 +39,10 @@ export const Intro = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "spring",
+              type: 'spring',
               stiffness: 125,
               delay: 0.1,
-              duration: 0.7,
+              duration: 0.7
             }}
           >
             👋
@@ -54,10 +55,10 @@ export const Intro = () => {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
       >
-        <span className="font-bold">Olá, me chamo Jefferson.</span> Eu sou{" "}
-        <span className="font-bold">Software Developer</span> com{" "}
-        <span className="font-bold">4 anos</span> de experiência. Eu amo criar{" "}
-        <span className="italic">sites</span>. Meu foco é{" "}
+        <span className="font-bold">Olá, me chamo Jefferson.</span> Eu sou{' '}
+        <span className="font-bold">Software Developer</span> com{' '}
+        <span className="font-bold">4 anos</span> de experiência. Eu amo criar{' '}
+        <span className="italic">sites</span>. Meu foco é{' '}
         <span className="underline">React (Next.js) e Node</span>.
       </motion.h1>
 
@@ -79,7 +80,7 @@ export const Intro = () => {
           download
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full border border-black/10 cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
         >
-          Download CV{" "}
+          Download CV{' '}
           <HiDownload className="opacity-60 group-hover:translate-y-1" />
         </a>
         <a
@@ -110,5 +111,5 @@ export const Intro = () => {
         </a>
       </motion.div>
     </section>
-  );
-};
+  )
+}

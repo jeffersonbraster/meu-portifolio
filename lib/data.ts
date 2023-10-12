@@ -91,13 +91,6 @@ export const projectsData = [
     tags: ["Html", "Sass", "Javascript"],
     imageUrl: neonImg,
   },
-  {
-    title: "Widget - feedback",
-    description:
-      "Projeto de um widget de feedback que pode ser utilizado em qualquer site para coleta de informações e bugs.",
-    tags: ["React", "Typescript", "Tailwind", "Vite"],
-    imageUrl: widgetImg,
-  },
 ] as const;
 
 export const skillsData = [

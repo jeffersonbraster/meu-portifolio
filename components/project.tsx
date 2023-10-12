@@ -20,7 +20,7 @@ export function Project({ title, description, tags, imageUrl }: ProjectProps) {
     <motion.div
       ref={ref}
       style={{ scale: scaleProgress, opacity: opacityProgress }}
-      className="group mb-3 sm:mb-8 last:mb-0 "
+      className="group mb-3 sm:mb-8 last:mb-0"
     >
       <section className="relative bg-gray-100 max-w-[42rem] rounded-lg border border-black/5 overflow-hidden sm:pr-8 sm:h-[20rem] hover:bg-gray-200 group-even:ml=[18rem]">
         <div className="h-full pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col group-even:ml-[18rem]">
