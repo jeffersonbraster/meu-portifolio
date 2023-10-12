@@ -41,7 +41,7 @@ export const experiencesData = [
     location: "Fortaleza, CE",
     description:
       "Atuei como analista de TI no grupo edson queiroz - holding. Participei de diversas integrações entre sistemas terceirizados, correções, manutenção em ERP, melhorias em diversos sites e aplicativos, consultas correções e desenvolvimento em banco de dados PL/SQL.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(CgWorkAlt),
     date: "2018 - 2021",
   },
   {

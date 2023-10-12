@@ -9,7 +9,7 @@ export const Projects = () => {
   const { ref } = useSectionInView('Projetos', 0.5)
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
+    <section id="projects" ref={ref} className="scroll-mt-28 mb-28">
       <SectionHeading>Projetos</SectionHeading>
 
       <div>
