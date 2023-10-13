@@ -84,7 +84,7 @@ export const Intro = () => {
         <a
           href="/cv-jefferson.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full borderBlack cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full borderBlack cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition dark:bg-white/10"
         >
           Download CV{' '}
           <HiDownload className="opacity-60 group-hover:translate-y-1" />
@@ -93,7 +93,7 @@ export const Intro = () => {
           href="https://www.instagram.com/jeffersonbrandao/"
           target="_black"
           rel="noreferrer"
-          className="bg-white p-4 text-pink-400 flex items-center gap-2 rounded-full cursor-pointer outline-none borderBlack focus:scale-110 hover:scale-110 hover:text-pink-700 active:scale-105 transition"
+          className="bg-white p-4 text-pink-400 flex items-center gap-2 rounded-full cursor-pointer outline-none borderBlack focus:scale-110 hover:scale-110 hover:text-pink-700 active:scale-105 transition dark:bg-white/10 dark:text-pink-950 dark:hover:text-pink-800"
         >
           <BsInstagram />
         </a>
@@ -102,7 +102,7 @@ export const Intro = () => {
           href="https://www.linkedin.com/in/jefferson-brandao-dev/"
           target="_black"
           rel="noreferrer"
-          className="bg-white p-4 text-blue-700 flex items-center gap-2 rounded-full cursor-pointer outline-none borderBlack focus:scale-110 hover:scale-110 hover:text-blue-900 active:scale-105 transition"
+          className="bg-white p-4 text-blue-700 flex items-center gap-2 rounded-full cursor-pointer outline-none borderBlack focus:scale-110 hover:scale-110 hover:text-blue-900 active:scale-105 transition dark:bg-white/10 dark:text-blue-950 dark:hover:text-blue-800"
         >
           <BsLinkedin />
         </a>
@@ -111,7 +111,7 @@ export const Intro = () => {
           href="https://github.com/jeffersonbraster"
           target="_black"
           rel="noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full cursor-pointer outline-none borderBlack focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full cursor-pointer outline-none borderBlack focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition dark:bg-white/10 dark:text-gray-950 dark:hover:text-gray-900"
         >
           <BsGithub />
         </a>
