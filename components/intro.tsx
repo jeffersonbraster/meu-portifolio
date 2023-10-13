@@ -6,9 +6,11 @@ import jejeImg from '../public/jeje_linke.jpeg'
 import { BsArrowRight, BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
 import { useSectionInView } from '@/lib/hooks'
+import { useActiveSectionContext } from '@/context/active-section-context'
 
 export const Intro = () => {
   const { ref } = useSectionInView('Inicio', 0.5)
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   return (
     <section
@@ -70,6 +72,10 @@ export const Intro = () => {
       >
         <Link
           href="#contact"
+          onClick={() => {
+            setActiveSection('Contato')
+            setTimeOfLastClick(Date.now())
+          }}
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
           Entre em contato
@@ -78,7 +84,7 @@ export const Intro = () => {
         <a
           href="/cv-jefferson.pdf"
           download
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full border border-black/10 cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full borderBlack cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition"
         >
           Download CV{' '}
           <HiDownload className="opacity-60 group-hover:translate-y-1" />
@@ -87,7 +93,7 @@ export const Intro = () => {
           href="https://www.instagram.com/jeffersonbrandao/"
           target="_black"
           rel="noreferrer"
-          className="bg-white p-4 text-pink-400 flex items-center gap-2 rounded-full cursor-pointer outline-none border border-black/10 focus:scale-110 hover:scale-110 hover:text-pink-700 active:scale-105 transition"
+          className="bg-white p-4 text-pink-400 flex items-center gap-2 rounded-full cursor-pointer outline-none borderBlack focus:scale-110 hover:scale-110 hover:text-pink-700 active:scale-105 transition"
         >
           <BsInstagram />
         </a>
@@ -96,7 +102,7 @@ export const Intro = () => {
           href="https://www.linkedin.com/in/jefferson-brandao-dev/"
           target="_black"
           rel="noreferrer"
-          className="bg-white p-4 text-blue-700 flex items-center gap-2 rounded-full cursor-pointer outline-none border border-black/10 focus:scale-110 hover:scale-110 hover:text-blue-900 active:scale-105 transition"
+          className="bg-white p-4 text-blue-700 flex items-center gap-2 rounded-full cursor-pointer outline-none borderBlack focus:scale-110 hover:scale-110 hover:text-blue-900 active:scale-105 transition"
         >
           <BsLinkedin />
         </a>
@@ -105,7 +111,7 @@ export const Intro = () => {
           href="https://github.com/jeffersonbraster"
           target="_black"
           rel="noreferrer"
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full cursor-pointer outline-none border border-black/10 focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full cursor-pointer outline-none borderBlack focus:scale-110 hover:scale-110 hover:text-gray-950 active:scale-105 transition"
         >
           <BsGithub />
         </a>
